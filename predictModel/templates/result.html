@@ -1,0 +1,10 @@
+{% extends "_base.html" %} {% block content %}
+<h1 class="text-3xl text-indigo-800">Diabetes Prediction Result</h1>
+<div class="md:w-1/3 m-5 relative flex h-16 items-center justify-between">
+  {% if result == 1 %}
+  <p><strong>Prediction Result:</strong> Diabetic</p>
+  {% else %}
+  <p><strong>Prediction Result:</strong> Not Diabetic</p>
+  {% endif %}
+</div>
+{% endblock content %}
