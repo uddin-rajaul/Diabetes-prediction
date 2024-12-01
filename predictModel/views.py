@@ -11,7 +11,7 @@ def home(request):
 
 def diabetic_prediction(input_data):
     # Load the trained model
-    model = pickle.load(open("C:/Users/uddin/Documents/Diabetes_prediction/predictModel/trained_model.sav", "rb"))
+    model = pickle.load(open("trained_model.sav", "rb"))
     # Load the scaler
     scaled = pickle.load(open("predictModel/scaler.sav", "rb"))
     #input_data = (5,116,74,0,0,25.6,0.201,30)
